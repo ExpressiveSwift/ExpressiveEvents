@@ -1,4 +1,4 @@
-# ExpressiveCasting
+# ExpressiveEvents
 
 <img alt="status development" src="https://img.shields.io/badge/status-development-red.svg"></a>
 <img alt="Swift 2.2" src="https://img.shields.io/badge/Swift-2.2-brightgreen.svg">
