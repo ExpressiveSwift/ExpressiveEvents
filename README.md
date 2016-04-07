@@ -9,7 +9,12 @@
 <!-- <img alt="Swift 3" src="https://img.shields.io/badge/Swift-3-brightgreen.svg"> -->
 <!-- <a href="https://swift.org/package-manager/"><img alt="Swift Package Manager incompatible" src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg"></a> -->
 
-Swift µ-framework implementing fast and idiomatic events (an alternative to NSNotificationCenter), plus idiomatic NSNotificationCenter subscriptions and KVO.
+Idiomatic event handling µ-framework:
+
+1. Fast, Swift-native implementation of events.
+2. Event bus approach.
+3. Compatible with NSNotificationCenter (on demand).
+4. Subscribe to NSNotificationCenter and KVO.
 
 Part of [ExpressiveSwift](https://github.com/ExpressiveSwift/ExpressiveSwift), a collection of µ-frameworks solving specific problems with straightforward, concise, readable and safe code.
 
@@ -18,3 +23,12 @@ Part of [ExpressiveSwift](https://github.com/ExpressiveSwift/ExpressiveSwift), a
 <!-- **Alpha status**: (1) seems to work, (2) is successfully used by an app under development, (3) can be adopted if you don't mind digging into and debugging the code of the framework occasionally, (4) may undergo radical changes. -->
 
 © 2016, Andrey Tarantsov. Distributed under the [MIT license](LICENSE).
+
+
+## For maintainers
+
+Release process:
+
+1. Bump the version number in `.podspec`.
+
+2. `make release`
