@@ -11,7 +11,7 @@ help:
 release: version commit tag push
 	pod trunk push
 
-prerelease: version commit tag
+prerelease: version commit tag push
 
 tag:
 	git tag -a -m "Release $(version)" $(TAGFLAGS) $(version)
