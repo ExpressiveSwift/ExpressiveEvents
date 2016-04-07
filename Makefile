@@ -1,8 +1,7 @@
 .PHONY: help release lint commit push
 
 package := $(notdir $(abspath .))
-podspec := $(package).podspec
-version := $(shell perl -ne 'print $$1 if /version\s*=\s*"(\d+\.\d+\.\d+)"/' $(podspec))
+version := $(shell perl -ne 'print $$1 if /version\s*=\s*"(\d+\.\d+\.\d+)"/' $(package).podspec)
 
 help:
 	@perl -ne 'print(substr($$_, 3)) if /^## /' $(lastword $(MAKEFILE_LIST))
